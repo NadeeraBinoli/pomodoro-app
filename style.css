@@ -1,6 +1,51 @@
 *{
   font-family: 'Rubik', sans-serif;
+  color: #000;
 }
 .heading{
   font-family: 'DynaPuff', cursive;
+  text-align: center;
+  font-size: 3rem;
+}
+ul{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  text-align: center;
+  justify-content: center;
+}
+li{
+  list-style: none;
+  padding: 8px;
+  border: #000 solid 5px;
+  border-radius: 2rem;
+}
+a{
+  text-decoration: none;
+}
+div.timer{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  text-align: center;
+  justify-content: center;
+}
+h2{
+  font-size: 8rem;
+}
+div.button{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  text-align: center;
+  justify-content: center;
+}
+div.pomo-number{
+  text-align: center;
+}
+button {
+  cursor: pointer;
+  background-color: #ffff;
+  padding: 8px;
+  border: #000 solid 5px;
 }
