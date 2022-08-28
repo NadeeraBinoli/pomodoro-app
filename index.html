@@ -18,21 +18,44 @@
 <body onload="template()">
   
   <h1 class="heading">POMO TIMER</h1>
-  <ul>
-    <li><a href="">Focus</a></li>
-    <li><a href="">Short break</a></li>
-    <li><a href="">Long break</a></li>
-  </ul>
-  <div class="timer">  
-    <h2 id="minutes">25</h2>
-    <h2 id="colon">:</h2>
-    <h2 id="seconds">00</h2>
+  <div class="clock">
+    <div class="timer">
+      <h3>Focus</h3>
+      <div class="time">
+        <h2 id="focus_minutes"></h2>
+        <h2 id="focus_colon">:</h2>
+        <h2 id="focus_seconds"></h2>
+      </div>  
+      
+    </div>
+    <div class="timer"> 
+      <h3>Short break</h3> 
+      <div class="time">
+        <h2 id="short_break_minutes"></h2>
+      <h2 id="short_break_colon">:</h2>
+      <h2 id="short_break_seconds"></h2>
+      </div> 
+      
+    </div>
+    <div class="timer">  
+      <h3>Long break</h3>
+      <div class="time">
+        <h2 id="long_break_minutes"></h2>
+      <h2 id="long_break_colon">:</h2>
+      <h2 id="long_break_seconds"></h2>
+      </div> 
+      
+    </div>
   </div>
+
+
   <div class="button">
     <button id="reset">RESET</button>
     <button id="start">START</button>
     <button id="stop">STOP</button>
   </div>
+
+  
   <div class="pomo-number">
     <p id="pomoNumber" class="pomoNumber">0</p><p># POMO</p>
   </div>
