@@ -15,7 +15,7 @@
   <!--css-->
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="template()">
   
   <h1 class="heading">POMO TIMER</h1>
   <ul>
@@ -29,12 +29,12 @@
     <h2 id="seconds">00</h2>
   </div>
   <div class="button">
-    <button>RESET</button>
-    <button>START</button>
-    <button>STOP</button>
+    <button id="reset">RESET</button>
+    <button id="start">START</button>
+    <button id="stop">STOP</button>
   </div>
   <div class="pomo-number">
-    <p class="pomoNumber"></p><p># POMO</p>
+    <p id="pomoNumber" class="pomoNumber">0</p><p># POMO</p>
   </div>
 
  
