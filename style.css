@@ -1,9 +1,11 @@
 *{
   font-family: 'Rubik', sans-serif;
-  color: #000;
+  color: #D2D79F;
+  background-color:#483838 ;
 }
 .heading{
   font-family: 'DynaPuff', cursive;
+  color: #2B7A0B;
   text-align: center;
   font-size: 3rem;
 }
@@ -22,13 +24,22 @@ div.time{
   width: 5rem;
   text-align: center;
   justify-content: center;
+  cursor: pointer;
+}
+
+div.timer:hover{
+  transform: scale(1.09);
 }
 div.button{
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 2rem;
   text-align: center;
   justify-content: center;
+}
+a{
+  text-decoration: none;
+  background-color: #2B7A0B;
 }
 div.pomo-number{
   text-align: center;
@@ -38,7 +49,11 @@ div.pomo-number{
 }
 button {
   cursor: pointer;
-  background-color: #ffff;
-  padding: 8px;
-  border: #000 solid 5px;
+  background-color: #2B7A0B;
+  padding: 1rem;
+  border: none;
+  border-radius: 2rem;
+}
+button:hover{
+  transform: scale(1.09);
 }
