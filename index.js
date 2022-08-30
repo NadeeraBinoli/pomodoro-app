@@ -37,16 +37,6 @@ start.addEventListener('click', function(){
 // reset button
 reset.addEventListener('click', function(){
 
-  focusSessionSeconds.innerText = "00";
-  focusSessionMinutes.innerText = 25;
-  shortBreakSessionSeconds.innerText = "00";
-  shortBreakSessionMinutes.innerText = 5;
-  longBreakSessionSeconds.innerText = "00";
-  longBreakSessionMinutes.innerText = 15;
-
-  document.getElementById("pomoNumber").innerText = 0;
-  stopInterval()
-  startTimer = undefined;
 })
 
 // stop button
