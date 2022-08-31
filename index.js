@@ -29,6 +29,8 @@ function template() {
  
 // start button
 start.addEventListener('click', function(){
+  var sound1 = new Audio('sounds/sound-1.mp3');
+  sound1.play();
   if(startTimer === undefined){
       startTimer = setInterval(timer, 1000)
   } else {
@@ -38,11 +40,15 @@ start.addEventListener('click', function(){
 
 // reset button
 reset.addEventListener('click', function(){
+  var sound1 = new Audio('sounds/sound-1.mp3');
+  sound1.play();
 
 })
 
 // stop button
 stop.addEventListener('click', function(){
+  var sound1 = new Audio('sounds/sound-1.mp3');
+  sound1.play();
   stopInterval()
   startTimer = undefined;
 })
@@ -56,7 +62,7 @@ function timer(){
       focusSessionMinutes.innerText--;
       progressBar.style.width = focusSessionMinutes.innerText*4 + "%"; // progress - bar
   }
-
+  
   //Short Break Timer Countdown
   if(focusSessionMinutes.innerText == 0 && focusSessionSeconds.innerText == 0 && document.getElementById("pomoNumber").innerText<=2){
       if(shortBreakSessionSeconds.innerText != 0){
@@ -90,8 +96,8 @@ function timer(){
       
   }
   if(longBreakSessionMinutes.innerText == 0 && longBreakSessionSeconds.innerText == 0 && document.getElementById("pomoNumber").innerText < 4){
+    var sound2 = new Audio('sounds/sound-2.mp3');
+    sound2.play();
     document.getElementById("pomoNumber").innerText++;
   }  
-
   }
-}
