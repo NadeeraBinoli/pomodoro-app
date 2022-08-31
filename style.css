@@ -135,3 +135,65 @@ div.message .close-button {
   height: 1.5rem;
   cursor: pointer;
 }
+
+/* mobile size */
+@media screen and (max-width:750px){
+ div.clock{
+    gap: 1rem;
+  }
+  div.time{  /* short break timer and long break timer time div */
+    gap: 1rem;
+    margin: 1rem;
+    width: 3rem;
+  }
+  h2{
+    border-radius: 50%;
+    padding: 0;
+  }
+
+  /* focus timer div */
+  div.focus-timer{
+    width: 10rem;
+    height: 10rem;
+    padding: 0;
+  }
+  h3.focus-heading{
+    font-size: 1.3rem;
+    margin-left:2.5rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    margin-right: 0;
+    padding: 0;
+    width: 5rem;
+  }
+  div.focus-time{
+    font-size: 1.3rem;
+    gap: 1rem;
+    width: 5rem;
+    height: auto;
+    margin-bottom:0;
+    margin-left:2.5rem;
+  } 
+ 
+  /* counter */
+  div.pomo-number{
+    gap: 1rem;
+    margin: 3rem;
+  }
+
+  /* button set */
+  div.button-div {
+    margin: 3rem;
+  }
+
+  /* progress bar  */
+  div.progress{
+    margin: 3rem;
+  }
+
+  /* message div */
+  div.message{
+    inset: 15% 10% 2% 10%;
+  }
+
+  }
