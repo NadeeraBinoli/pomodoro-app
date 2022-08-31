@@ -71,6 +71,7 @@ a{
 div.pomo-number{
   text-align: center;
   display: flex;
+  gap: 1rem;
   flex-direction: row;
   justify-content: center;
 }
