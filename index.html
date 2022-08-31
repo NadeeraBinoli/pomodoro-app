@@ -18,18 +18,20 @@
 <body onload="template()">
   
   <h1 class="heading">POMO TIMER</h1>
+
   <div class="clock">
-   
+
+   <!--short break timer  -->
     <div class="timer"> 
       <h3>Short break</h3> 
       <div class="time">
         <h2 id="short_break_minutes"></h2>
-      <h2 id="short_break_colon">:</h2>
-      <h2 id="short_break_seconds"></h2>
+        <h2 id="short_break_colon">:</h2>
+        <h2 id="short_break_seconds"></h2>
       </div> 
-      
     </div>
 
+    <!--focus timer  -->
     <div class="focus-timer">
       <h3 class="focus-heading">Focus</h3>
       <div class="focus-time">
@@ -37,38 +39,38 @@
         <h2 id="focus_colon">:</h2>
         <h2 id="focus_seconds"></h2>
       </div>  
-      
     </div>
 
+    <!--long break timer  -->
     <div class="timer">  
       <h3>Long break</h3>
       <div class="time">
         <h2 id="long_break_minutes"></h2>
-      <h2 id="long_break_colon">:</h2>
-      <h2 id="long_break_seconds"></h2>
+        <h2 id="long_break_colon">:</h2>
+        <h2 id="long_break_seconds"></h2>
       </div> 
-      
     </div>
+
   </div>
 
+  <!-- progress bar -->
   <div class="progress">
     <div class="progress-bar">
-      
     </div>
   </div>
 
-  <div class="button">
+  <!-- button set -->
+  <div class="button-div">
     <button id="reset"><a href="index.html">RESET</a></button>
     <button id="start">START</button>
     <button id="stop">STOP</button>
   </div>
 
-  
+  <!-- counter -->
   <div class="pomo-number">
     <div>YOU COMPLETED</div> <div id="pomoNumber" class="pomoNumber"> 0</div><div>POMO</div>
   </div>
 
- 
   <!-- message div -->
  <div data-visible="false" class="message">
   <button onclick="closeButtonFunction()" class="close-button"></button>
