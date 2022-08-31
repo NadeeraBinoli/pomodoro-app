@@ -7,6 +7,9 @@ var longBreakSessionMinutes = document.getElementById("long_break_minutes");
 
 const progressBar = document.querySelector(".progress-bar") // progress - bar
 
+const messageDiv = document.querySelector(".message")
+const closeButton = document.querySelector(".close-button");
+
 var start = document.getElementById("start");
 var stop = document.getElementById("stop");
 var reset = document.getElementById("reset");
@@ -101,3 +104,12 @@ function timer(){
     document.getElementById("pomoNumber").innerText++;
   }  
   }
+  if (document.getElementById("pomoNumber").innerText == 4) {
+      messageDiv.setAttribute("data-visible", true);  
+  }
+}
+
+function  closeButtonFunction() {
+  messageDiv.setAttribute("display-visible" , false);
+}
+ 

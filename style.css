@@ -97,4 +97,41 @@ div.progress-bar{
 }
 h2{
   margin: 0%;
+
+/* message div */
+div.message{
+  background-color: hsl(0 0% 52% /0.95);
+  color: #483838;
+  transition: transform 350ms ease-out;
+  transform: translateX(-1000%);
+  position: fixed;
+  z-index: 1;
+  inset: 15% 25% 8% 25%;
+}
+div.message[data-visible="true"] {
+  transform: translateX(-0%);
+}
+
+div.message[display-visible="false"] {
+  display: none;
+}
+div.message p{
+  background-color: hsl(0 0% 52% /0.95);
+  color: #483838;
+  font-size: 2rem;
+  margin: 3rem;
+  font-family: 'DynaPuff', cursive;
+}
+div.message button{
+  background-color: #483838;
+  margin-left: 3rem;
+}
+div.message button a{
+  background-color: #483838;;
+}
+div.message .close-button {
+  background: url("images/close-button.svg");
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
 }
