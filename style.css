@@ -57,3 +57,12 @@ button {
 button:hover{
   transform: scale(1.09);
 }
+div.progress{
+  border: hsl(103, 83%, 26%) solid 3px;
+  margin: 2rem;
+  background-color: #90B77D;
+}
+div.progress-bar{
+  height: 1rem;
+  width: 0;
+}

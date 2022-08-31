@@ -5,6 +5,8 @@ var shortBreakSessionMinutes = document.getElementById("short_break_minutes");
 var longBreakSessionSeconds = document.getElementById("long_break_seconds");
 var longBreakSessionMinutes = document.getElementById("long_break_minutes");
 
+const progressBar = document.querySelector(".progress-bar") // progress - bar
+
 var start = document.getElementById("start");
 var stop = document.getElementById("stop");
 var reset = document.getElementById("reset");
@@ -52,6 +54,7 @@ function timer(){
   } else if(focusSessionMinutes.innerText != 0 && focusSessionSeconds.innerText == 0){
       focusSessionSeconds.innerText = 59;
       focusSessionMinutes.innerText--;
+      progressBar.style.width = focusSessionMinutes.innerText*4 + "%"; // progress - bar
   }
 
   //Short Break Timer Countdown
