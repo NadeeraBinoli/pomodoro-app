@@ -55,7 +55,7 @@ function timer(){
   }
 
   //Short Break Timer Countdown
-  if(focusSessionMinutes.innerText == 0 && focusSessionSeconds.innerText == 0){
+  if(focusSessionMinutes.innerText == 0 && focusSessionSeconds.innerText == 0 && document.getElementById("pomoNumber").innerText<=2){
       if(shortBreakSessionSeconds.innerText != 0){
           shortBreakSessionSeconds.innerText--;
       } else if(shortBreakSessionMinutes.innerText != 0 && shortBreakSessionSeconds.innerText == 0){
@@ -65,7 +65,7 @@ function timer(){
   }
 
   //Increment Counter by one if one full cycle is completed
-  if(focusSessionMinutes.innerText == 0 && focusSessionSeconds.innerText == 0 && shortBreakSessionMinutes.innerText == 0 && shortBreakSessionSeconds.innerText == 0 && document.getElementById("pomoNumber").innerText < 4){
+  if(focusSessionMinutes.innerText == 0 && focusSessionSeconds.innerText == 0 && shortBreakSessionMinutes.innerText == 0 && shortBreakSessionSeconds.innerText == 0 && document.getElementById("pomoNumber").innerText < 3){
       focusSessionMinutes.innerText = 25;
       focusSessionSeconds.innerText = "00";
 
@@ -74,16 +74,21 @@ function timer(){
 
       document.getElementById("pomoNumber").innerText++;
   }
+  
  //long Break Timer Countdown
-  if (document.getElementById("pomoNumber").innerText == 4 && focusSessionMinutes.innerText == 0 && focusSessionSeconds.innerText == 0 && shortBreakSessionMinutes.innerText == 0 && shortBreakSessionSeconds.innerText == 0) {
-    if(focusSessionMinutes.innerText == 0 && focusSessionSeconds.innerText == 0 && shortBreakSessionSeconds.innerText == 0 && shortBreakSessionMinutes.innerText == 0){
-      if(longBreakSessionSeconds.innerText != 0){
-          longBreakSessionSeconds.innerText--;
-      } else if(longBreakSessionMinutes.innerText != 0 && longBreakSessionSeconds.innerText == 0){
-          longBreakSessionSeconds.innerText = 59;
-          longBreakSessionMinutes.innerText--;
-      }
+  if (document.getElementById("pomoNumber").innerText == 3 && focusSessionMinutes.innerText == 0 && focusSessionSeconds.innerText == 0 ) {
+      shortBreakSessionMinutes.innerText = 0;
+      shortBreakSessionSeconds.innerText = 0;
+    if(longBreakSessionSeconds.innerText != 0){
+      longBreakSessionSeconds.innerText--;
+  } else if(longBreakSessionMinutes.innerText != 0 && longBreakSessionSeconds.innerText == 0){
+      longBreakSessionSeconds.innerText = 59;
+      longBreakSessionMinutes.innerText--;
+      
   }
+  if(longBreakSessionMinutes.innerText == 0 && longBreakSessionSeconds.innerText == 0 && document.getElementById("pomoNumber").innerText < 4){
+    document.getElementById("pomoNumber").innerText++;
+  }  
 
   }
 }
